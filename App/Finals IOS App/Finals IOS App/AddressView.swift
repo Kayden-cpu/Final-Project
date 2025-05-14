@@ -8,8 +8,20 @@
 import SwiftUI
 
 struct AddressView: View {
+    @State var address = Address(street: "", city: "", state: "", zip: "", country: "")
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack {
+           
+            
+            Color.blue
+                .clipShape(RoundedRectangle(cornerRadius: 30))
+                .frame(height: 110)
+                .frame(width: 350)
+            Text("\(Address(street: "Street", city: "City", state: "State", zip: "Zip", country: "Country"))")
+                .foregroundStyle(Color.white)
+                .font(.system(size: 19))
+            
+        }
     }
 }
 

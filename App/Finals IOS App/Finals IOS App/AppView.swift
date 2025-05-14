@@ -15,7 +15,7 @@ struct AppView: View {
                 Color(.blue)
                     .ignoresSafeArea()
                     .frame(height: 100)
-                Text("Simply the Gathering")
+                Text("Current Addresses")
                     .foregroundStyle(Color.white)
                     .font(.system(size: 30))
             }
